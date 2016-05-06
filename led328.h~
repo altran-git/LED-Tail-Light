@@ -1,0 +1,55 @@
+#ifndef _LED328_
+#define _LED328_
+
+#pragma used+
+
+#define CH1_ON (PORTB |= (1<<0))
+#define CH2_ON (PORTB |= (1<<1))
+#define CH3_ON (PORTB |= (1<<2))
+#define CH4_ON (PORTB |= (1<<3))
+#define CH5_ON (PORTB |= (1<<4))
+#define CH6_ON (PORTB |= (1<<5))
+#define CH7_ON (PORTB |= (1<<6))
+#define CH8_ON (PORTB |= (1<<7))
+
+#define CH9_ON (PORTC |= (1<<0))
+#define CH10_ON (PORTC |= (1<<1))
+#define CH11_ON (PORTC |= (1<<2))
+#define CH12_ON (PORTC |= (1<<3))
+#define CH13_ON (PORTC |= (1<<4))
+#define CH14_ON (PORTC |= (1<<5))
+
+#define CH15_ON (PORTD |= (1<<4))
+#define CH16_ON (PORTD |= (1<<5))
+
+#define CH1_OFF (PORTB &= ~(1<<0))
+#define CH2_OFF (PORTB &= ~(1<<1))
+#define CH3_OFF (PORTB &= ~(1<<2))
+#define CH4_OFF (PORTB &= ~(1<<3))
+#define CH5_OFF (PORTB &= ~(1<<4))
+#define CH6_OFF (PORTB &= ~(1<<5))
+#define CH7_OFF (PORTB &= ~(1<<6))
+#define CH8_OFF (PORTB &= ~(1<<7))
+#define CH9_OFF (PORTC &= ~(1<<0))
+
+#define CH10_OFF (PORTC &= ~(1<<1))
+#define CH11_OFF (PORTC &= ~(1<<2))
+#define CH12_OFF (PORTC &= ~(1<<3))
+#define CH13_OFF (PORTC &= ~(1<<4))
+#define CH14_OFF (PORTC &= ~(1<<5))
+
+#define CH15_OFF (PORTD &= ~(1<<4))
+#define CH16_OFF (PORTD &= ~(1<<5))
+
+#define PORTB_ON PORTB |= ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)|(1<<7))
+#define PORTC_ON PORTC |= ((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5))
+#define PORTD_ON PORTD |= ((1<<4)|(1<<5))
+
+#define PORTB_OFF PORTB &= ~((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)|(1<<7))
+#define PORTC_OFF PORTC &= ~((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5))
+#define PORTD_OFF PORTD &= ~((1<<4)|(1<<5))
+
+#define TIME_OFFSET 10; 
+#pragma used-
+
+#endif
